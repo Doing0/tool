@@ -3,7 +3,7 @@
  * Created by PhpStorm
  */
 
-namespace Doing\password;
+namespace Doing\tool\password;
 
 class Password {
     const HASH = PASSWORD_BCRYPT;
