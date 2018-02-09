@@ -1,7 +1,7 @@
 {
   "name": "doing/tool",
   "description": "tool",
-  "keywords": ["tool", "password"],
+  "keywords": ["tool", "password","upload"],
   "type": "library",
   "license": "MIT",
   "authors": [
