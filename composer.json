@@ -1,6 +1,6 @@
 {
-  "name": "doing/password",
-  "description": "password",
+  "name": "doing/tool",
+  "description": "tool",
   "keywords": ["tool", "password"],
   "type": "library",
   "license": "MIT",
