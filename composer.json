@@ -1,9 +1,8 @@
 {
-  "name": "doing/password",
-  "description": "password tool",
+  "name": "doing/tool",
+  "description": "tool",
   "keywords": [
-    "password",
-    "tool"
+    "tool password"
   ],
   "type": "library",
   "license": "MIT",
@@ -18,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Lib\\": "Lib"
+//      "Tool\\": "Password"
     }
   }
 }
