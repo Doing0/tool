@@ -2,7 +2,7 @@
 
 - 加密
 ```
- use Doing\password\Password;
+ use Doing\tool\password\Password;
  public function inedx()
     {
         $password = '123456';
