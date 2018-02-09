@@ -1,4 +1,5 @@
-# password使用说明(Tp5)
+#常用工具
+##  password使用说明(Tp5)
 
 - 加密
 ```
