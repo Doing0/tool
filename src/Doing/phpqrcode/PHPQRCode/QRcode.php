@@ -4,9 +4,7 @@
  *
  * Created by arielferrandini
  */
-
 namespace PHPQRCode;
-
 use Exception;
 
 class QRcode {
