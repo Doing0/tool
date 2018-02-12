@@ -41,5 +41,12 @@
  3.$km = getDistanceByCoordinate($myY, $myX, $targetY, $targetX)
    //根据两个经纬度计算出距离(单位KM)
    print_r($km);
+ 4. $RgbArray = hexToRGB("#FF0000");//16进制颜色转换成rgb
+     array(3) {
+       ["red"] => int(255)
+       ["green"] => int(0)
+       ["blue"] => int(0)
+     }
+    
 ```
  

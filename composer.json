@@ -1,7 +1,7 @@
 {
   "name": "doing/tool",
   "description": "tool",
-  "keywords": ["tool", "password","upload"],
+  "keywords": ["tool", "password","upload","color","RGB"],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -18,7 +18,8 @@
       "src/Doing/functions.php"
     ],
     "psr-4": {
-     "Doing\\tool\\": "src/Doing"
+     "Doing\\tool\\": "src/Doing",
+     "PHPQRCode\\": "src/Doing/phpqrcode"
     }
   }
 }

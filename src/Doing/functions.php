@@ -27,16 +27,18 @@ function getRandChar($length = 32)
 
 /**
  * 二维数组按指定字段进行排序
+ *
  * @param $array2D二维数组
  * @param $field指定字段排序
  * @param string $sortby 排序方式
+ *
  * @return array|bool
  */
 function array2DSortByField($array2D, $field, $sortby = 'asc')
 {
     if (is_array($array2D))
     {
-        $refer = $resultSet = array();
+        $refer = $resultSet = [];
         foreach ($array2D as $i => $data)
         {
             $refer[$i] = &$data[$field];
@@ -63,10 +65,12 @@ function array2DSortByField($array2D, $field, $sortby = 'asc')
 }//fun
 
 /**计算两点的距离:
+ *
  * @param $myY我的经度
  * @param $myX我的维度
  * @param $targetY目标经度
- *@param $targetX目标维度
+ * @param $targetX目标维度
+ *
  * @return float km
  */
 function getDistanceByCoordinate($myY, $myX, $targetY, $targetX)
@@ -85,5 +89,32 @@ function getDistanceByCoordinate($myY, $myX, $targetY, $targetX)
     return round($calculatedDistance) / 1000;
 }
 
+/**颜色进度转换16进制样式转rgb
+ * @param $colour16进制颜色eg:#fff
+ * @return $array
+ */
+function hexToRGB($colour)
+{
+    if ($colour[0] == '#')
+    {
+        $colour = substr($colour, 1);
+    }
+    if (strlen($colour) == 6)
+    {
+        list($r, $g, $b) = [$colour[0] . $colour[1], $colour[2] .
+            $colour[3], $colour[4] . $colour[5]];
+    }elseif (strlen($colour) == 3)
+    {
+        list($r, $g, $b) = [$colour[0] . $colour[0], $colour[1] .
+            $colour[1], $colour[2] . $colour[2]];
+    }else
+    {
+        return false;
+    }
+    $r = hexdec($r);
+    $g = hexdec($g);
+    $b = hexdec($b);
+    return ['red' => $r, 'green' => $g, 'blue' => $b];
 
+}
 
