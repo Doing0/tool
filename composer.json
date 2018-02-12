@@ -19,7 +19,7 @@
     ],
     "psr-4": {
      "Doing\\tool\\": "src/Doing",
-     "PHPQRCode": "src/Doing/phpqrcode"
+     "PHPQRCode\\": "src/Doing/phpqrcode"
     }
   }
 }
