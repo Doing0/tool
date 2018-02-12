@@ -1,7 +1,12 @@
 <?php
 /**
  * Created by PhpStorm
+ * PROJECT: TOOL
+ * User: Doing<vip.dulin@gmail.com>
+ * Date: 2018年2月12日
+ * Desc:加密解密
  */
+
 
 namespace Doing\tool\password;
 
