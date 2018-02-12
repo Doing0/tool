@@ -25,3 +25,21 @@
         //如果匹配$res= true 否是=false
      }//pf
  ```
+ - functions.php常用算法方法
+ ```
+ 1.$randStr = getRandChar($length=32);获取指定长度的随机字符串
+ 2.$newArray = array2DSortByField($array,'number','desc');按number字段倒序
+    print_r($newArray);
+    array(2) {
+      [0] => array(1) {
+        ["number"] => int(50)
+      }
+      [1] => array(1) {
+        ["number"] => int(2)
+      }
+    }
+ 3.$km = getDistanceByCoordinate($myY, $myX, $targetY, $targetX)
+   //根据两个经纬度计算出距离(单位KM)
+   print_r($km);
+```
+ 
