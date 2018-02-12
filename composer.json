@@ -15,7 +15,7 @@
   },
   "autoload": {
     "files":[
-      "Doing/src/functions.php"
+      "src/Doing/functions.php"
     ],
     "psr-4": {
      "Doing\\tool\\": "src/Doing"
