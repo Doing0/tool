@@ -25,7 +25,7 @@
         //如果匹配$res= true 否是=false
      }//pf
  ```
- - functions.php常用算法方法
+ ##  functions.php常用算法方法
  ```
  1.$randStr = getRandChar($length=32);获取指定长度的随机字符串
  2.$newArray = array2DSortByField($array,'number','desc');按number字段倒序
