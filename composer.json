@@ -18,7 +18,6 @@
       "src/Doing/functions.php"
     ],
     "psr-4": {
-      "PHPQRCode\\": "src/Doing/phpqrcode",
       "Doing\\tool\\": "src/Doing"
     }
   }
