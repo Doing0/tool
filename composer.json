@@ -18,7 +18,7 @@
       "src/functions.php"
     ],
     "psr-4": {
-      "Doing\\tool\\": "src"
+      "Tool\\": "src"
     }
   }
 }
