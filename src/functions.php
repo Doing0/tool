@@ -133,13 +133,16 @@ function xmlToArray($xml)
     return $values;
 }//fun
 /**模拟http请求
+ *
  * @param string $url 请求地址
  * @param array|json $ data 请求参数:根据接口要求传json还是数组
  * @param string $type 请求方式POST/GET
- * @param bool $header 头部信息如token return "Authorization:Bearer ".$tokenResult['access_token'];
+ * @param bool $header 头部信息如token return "Authorization:Bearer
+ *     ".$tokenResult['access_token'];
+ *
  * @return mixed
  */
-function postCurl($url = '',$type = "POST", $data = '',$header = false)
+function postCurl($url = '', $type = "POST", $data = '', $header = false)
 {
     #1.创建一个curl资源
     $ch = curl_init();
@@ -162,6 +165,21 @@ function postCurl($url = '',$type = "POST", $data = '',$header = false)
     {
         //全部数据使用HTTP协议中的"POST"操作来发送。
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    }
+    //3)设置提交方式
+    switch($type){
+        case "GET":
+            curl_setopt($ch,CURLOPT_HTTPGET,true);
+            break;
+        case "POST":
+            curl_setopt($ch,CURLOPT_POST,true);
+            break;
+        case "PUT"://使用一个自定义的请求信息来代替"GET"或"HEAD"作为HTTP请求。这对于执行"DELETE" 或者其他更隐蔽的HTT
+            curl_setopt($ch,CURLOPT_CUSTOMREQUEST,"PUT");
+            break;
+        case "DELETE":
+            curl_setopt($ch,CURLOPT_CUSTOMREQUEST,"DELETE");
+            break;
     }
     //4.设置请求头 如果有才设置
     if ($header)
@@ -188,6 +206,17 @@ function postCurl($url = '',$type = "POST", $data = '',$header = false)
     curl_close($ch);
     return $result;
 }//fun
+/**拼接url请求参数:把数组转换成url参数
+ * @param $url链接地址
+ * @param $data请求数组
+ * @return string
+ */
+function makeUrlData($url, $data)
+{
+    $rescult = http_build_query($data);
+    return $url . "?" . $rescult;
+
+}
 
 
 

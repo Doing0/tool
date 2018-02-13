@@ -53,4 +53,11 @@ use tool\password\Password;
  > 6的参数说明
  >  $url请求地址,$type请求方式GET/POST,$data请求参数,$header请求头
  > 说明:如果$type是GET请求直接把参数拼接在$url上,不传$data
+ ```
+ 7.  $rescult = makeUrlData($url, $dataArray);把数组参数拼接到url上
+     $url = "http://www.baidu.com";
+     $dataArray['username'] = 'doing';
+     $dataArray['action'] = 'send';
+     $rescult = "http://www.baidu.com?username=doing&action=send"
+ ```
  
