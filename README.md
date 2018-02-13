@@ -47,6 +47,6 @@ use tool\password\Password;
        ["green"] => int(0)
        ["blue"] => int(0)
      }
-    
+  5. $array = xmlToArray($xml);将xml格式转换成数组返回
 ```
  

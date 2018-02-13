@@ -90,7 +90,9 @@ function getDistanceByCoordinate($myY, $myX, $targetY, $targetX)
 }
 
 /**颜色进度转换16进制样式转rgb
- * @param $colour16进制颜色eg:#fff
+ *
+ * @param $colour16进制颜色eg :#fff
+ *
  * @return $array
  */
 function hexToRGB($colour)
@@ -116,5 +118,17 @@ function hexToRGB($colour)
     $b = hexdec($b);
     return ['red' => $r, 'green' => $g, 'blue' => $b];
 
+}
+
+/**
+ * 将xml转为array
+ * @param string $xml
+ * return array
+ */
+function xmlToArray($xml)
+{
+    libxml_disable_entity_loader(true);
+    $values = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
+    return $values;
 }
 
