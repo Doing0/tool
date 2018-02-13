@@ -48,5 +48,9 @@ use tool\password\Password;
        ["blue"] => int(0)
      }
   5. $array = xmlToArray($xml);将xml格式转换成数组返回
+  6. $res = postCurl($url = '',$type = "POST",$data = '', );模拟http请求
 ```
+ > 6的参数说明
+ >  $url请求地址,$type请求方式GET/POST,$data请求参数,$header请求头
+ > 说明:如果$type是GET请求直接把参数拼接在$url上,不传$data
  

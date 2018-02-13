@@ -1,7 +1,7 @@
 {
   "name": "doing/tool",
-  "description": "常用工具:加密和密码验证,随机字符串,16进制颜色转换,计算距离,数组排序,xml转换数组",
-  "keywords": ["tool", "password","color","RGB","sort","xml"],
+  "description": "常用工具:加密和密码验证,随机字符串,16进制颜色转换,计算距离,数组排序,xml转换数组,curl模拟http请求",
+  "keywords": ["tool", "password","color","RGB","sort","xml","curl","http"],
   "type": "library",
   "license": "MIT",
   "authors": [
