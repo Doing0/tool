@@ -15,10 +15,10 @@
   },
   "autoload": {
     "files":[
-      "src/Doing/functions.php"
+      "src/functions.php"
     ],
     "psr-4": {
-      "Doing\\tool\\": "src/Doing"
+      "Doing\\": "src"
     }
   }
 }
