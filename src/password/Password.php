@@ -8,7 +8,7 @@
  */
 
 
-namespace Doing\password;
+namespace Doing\tool;
 
 class Password {
     const HASH = PASSWORD_BCRYPT;
