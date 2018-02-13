@@ -1,7 +1,7 @@
 {
   "name": "doing/tool",
-  "description": "tool",
-  "keywords": ["tool", "password","upload","color","RGB"],
+  "description": "常用工具:加密和密码验证,随机字符串,16进制颜色转换,计算距离,数组排序,",
+  "keywords": ["tool", "password","color","RGB","sort"],
   "type": "library",
   "license": "MIT",
   "authors": [
