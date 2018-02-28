@@ -61,3 +61,10 @@ use tool\password\Password;
      $rescult = "http://www.baidu.com?username=doing&action=send"
  ```
  
+ ```
+ 8.根据生日计算年龄:生日必须是阳历的时间戳
+ //1992-02-28
+ $birthday = '699240100';
+ //$age = 26;
+ $age = clalculateAgeByBirthday($birthday);
+ ```

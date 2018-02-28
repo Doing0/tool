@@ -167,18 +167,19 @@ function postCurl($url = '', $type = "POST", $data = '', $header = false)
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     }
     //3)设置提交方式
-    switch($type){
+    switch ($type)
+    {
         case "GET":
-            curl_setopt($ch,CURLOPT_HTTPGET,true);
+            curl_setopt($ch, CURLOPT_HTTPGET, true);
             break;
         case "POST":
-            curl_setopt($ch,CURLOPT_POST,true);
+            curl_setopt($ch, CURLOPT_POST, true);
             break;
         case "PUT"://使用一个自定义的请求信息来代替"GET"或"HEAD"作为HTTP请求。这对于执行"DELETE" 或者其他更隐蔽的HTT
-            curl_setopt($ch,CURLOPT_CUSTOMREQUEST,"PUT");
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
             break;
         case "DELETE":
-            curl_setopt($ch,CURLOPT_CUSTOMREQUEST,"DELETE");
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
             break;
     }
     //4.设置请求头 如果有才设置
@@ -207,8 +208,10 @@ function postCurl($url = '', $type = "POST", $data = '', $header = false)
     return $result;
 }//fun
 /**拼接url请求参数:把数组转换成url参数
+ *
  * @param $url链接地址
  * @param $data请求数组
+ *
  * @return string
  */
 function makeUrlData($url, $data)
@@ -216,6 +219,15 @@ function makeUrlData($url, $data)
     $rescult = http_build_query($data);
     return $url . "?" . $rescult;
 
+}
+
+/**根据生日计算年龄
+ * @param $birthday ['生日的时间戳:阳历']
+ * return 年龄正整数
+ */
+function clalculateAgeByBirthday($birthday)
+{
+    return floor((strtotime(date('Y-m-d'))-$birthday)/3600/24/365);
 }
 
 
