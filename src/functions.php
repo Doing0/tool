@@ -222,12 +222,22 @@ function makeUrlData($url, $data)
 }
 
 /**根据生日计算年龄
+ *
  * @param $birthday ['生日的时间戳:阳历']
  * return 年龄正整数
  */
 function clalculateAgeByBirthday($birthday)
 {
-    return floor((strtotime(date('Y-m-d'))-$birthday)/3600/24/365);
+    return floor((strtotime(date('Y-m-d')) - $birthday) / 3600 / 24 / 365);
+}
+/**手机号加*
+ *
+ * @param $phone ['原始手机号']
+ * return 加*后的手机号
+ */
+function wrapPhone($phone)
+{
+    return substr_replace($phone, '****', 3, 4);
 }
 
 

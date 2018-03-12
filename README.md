@@ -68,3 +68,11 @@ use tool\password\Password;
  //$age = 26;
  $age = clalculateAgeByBirthday($birthday);
  ```
+ 
+ 
+  ```
+  9.给手机号加*
+  //13838385438
+  $phone = '13838385438';
+  $newPhone = wrapPhone($phone);//138****5438
+  ```
