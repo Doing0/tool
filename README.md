@@ -1,6 +1,6 @@
 > 安装命令：`composer require doing/extp 版本号`
 > 如`composer require doing/extp 1.*`
-#常用工具1
+# 常用工具
 ##  password使用说明(Tp5)
 
 - 加密
