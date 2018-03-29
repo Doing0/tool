@@ -13,7 +13,7 @@
  *
  * @return null|string
  */
-function getRandChar($length = 32)
+function getRandChar($length = 16)
 {
     $str = null;
     $strPol = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
